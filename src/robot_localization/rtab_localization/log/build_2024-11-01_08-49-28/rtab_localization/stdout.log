@@ -1,0 +1,29 @@
+running egg_info
+writing build/rtab_localization/rtab_localization.egg-info/PKG-INFO
+writing dependency_links to build/rtab_localization/rtab_localization.egg-info/dependency_links.txt
+writing entry points to build/rtab_localization/rtab_localization.egg-info/entry_points.txt
+writing requirements to build/rtab_localization/rtab_localization.egg-info/requires.txt
+writing top-level names to build/rtab_localization/rtab_localization.egg-info/top_level.txt
+reading manifest file 'build/rtab_localization/rtab_localization.egg-info/SOURCES.txt'
+writing manifest file 'build/rtab_localization/rtab_localization.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /home/hdm/shaobing/rtab_localization/install/rtab_localization/lib/python3.10/site-packages/rtab_localization
+copying /home/hdm/shaobing/rtab_localization/build/rtab_localization/build/lib/rtab_localization/__init__.py -> /home/hdm/shaobing/rtab_localization/install/rtab_localization/lib/python3.10/site-packages/rtab_localization
+copying /home/hdm/shaobing/rtab_localization/build/rtab_localization/build/lib/rtab_localization/rtab_localization_launch.py -> /home/hdm/shaobing/rtab_localization/install/rtab_localization/lib/python3.10/site-packages/rtab_localization
+byte-compiling /home/hdm/shaobing/rtab_localization/install/rtab_localization/lib/python3.10/site-packages/rtab_localization/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/hdm/shaobing/rtab_localization/install/rtab_localization/lib/python3.10/site-packages/rtab_localization/rtab_localization_launch.py to rtab_localization_launch.cpython-310.pyc
+running install_data
+creating /home/hdm/shaobing/rtab_localization/install/rtab_localization/share/ament_index
+creating /home/hdm/shaobing/rtab_localization/install/rtab_localization/share/ament_index/resource_index
+creating /home/hdm/shaobing/rtab_localization/install/rtab_localization/share/ament_index/resource_index/packages
+copying resource/rtab_localization -> /home/hdm/shaobing/rtab_localization/install/rtab_localization/share/ament_index/resource_index/packages
+copying package.xml -> /home/hdm/shaobing/rtab_localization/install/rtab_localization/share/rtab_localization
+creating /home/hdm/shaobing/rtab_localization/install/rtab_localization/share/rtab_localization/launch
+copying launch/rtab_localization_launch.py -> /home/hdm/shaobing/rtab_localization/install/rtab_localization/share/rtab_localization/launch
+running install_egg_info
+Copying build/rtab_localization/rtab_localization.egg-info to /home/hdm/shaobing/rtab_localization/install/rtab_localization/lib/python3.10/site-packages/rtab_localization-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/hdm/shaobing/rtab_localization/build/rtab_localization/install.log'

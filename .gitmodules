@@ -1,0 +1,7 @@
+[submodule "src/robot_localization/FAST_LIO"]
+	path = src/robot_localization/FAST_LIO
+	url = https://github.com/bbguhdm/FAST_LIO.git
+[submodule "src/sensor_driver/livox_ros_driver2"]
+	path = src/sensor_driver/livox_ros_driver2
+	url = https://github.com/bbguhdm/livox_ros_driver2.git
+	branch = ros2

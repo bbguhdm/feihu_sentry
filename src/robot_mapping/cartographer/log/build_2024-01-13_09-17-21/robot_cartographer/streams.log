@@ -1,0 +1,28 @@
+[0.128s] Invoking command in '/home/feihu/shaobing/feihu/src/robot_cartographer/build/robot_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/feihu/shaobing/feihu/src/robot_cartographer/build/robot_cartographer -- -j8 -l8
+[0.176s] Invoked command in '/home/feihu/shaobing/feihu/src/robot_cartographer/build/robot_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/feihu/shaobing/feihu/src/robot_cartographer/build/robot_cartographer -- -j8 -l8
+[0.227s] Invoking command in '/home/feihu/shaobing/feihu/src/robot_cartographer/build/robot_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/feihu/shaobing/feihu/src/robot_cartographer/build/robot_cartographer
+[0.236s] -- Install configuration: ""
+[0.236s] -- Up-to-date: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/config
+[0.237s] -- Up-to-date: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/config/cartographer.rviz
+[0.237s] -- Up-to-date: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/config/fishbot_2d.lua
+[0.237s] -- Up-to-date: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/config/fishbot_laser_2d.lua
+[0.237s] -- Up-to-date: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/launch
+[0.237s] -- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/launch/cartographer.launch.py
+[0.238s] -- Up-to-date: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/rviz
+[0.238s] -- Up-to-date: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/rviz/fishbot_cartographer.rviz
+[0.238s] -- Up-to-date: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/ament_index/resource_index/package_run_dependencies/robot_cartographer
+[0.238s] -- Up-to-date: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/ament_index/resource_index/parent_prefix_path/robot_cartographer
+[0.238s] -- Up-to-date: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/environment/ament_prefix_path.sh
+[0.238s] -- Up-to-date: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/environment/ament_prefix_path.dsv
+[0.238s] -- Up-to-date: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/environment/path.sh
+[0.239s] -- Up-to-date: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/environment/path.dsv
+[0.239s] -- Up-to-date: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/local_setup.bash
+[0.239s] -- Up-to-date: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/local_setup.sh
+[0.239s] -- Up-to-date: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/local_setup.zsh
+[0.239s] -- Up-to-date: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/local_setup.dsv
+[0.239s] -- Up-to-date: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/package.dsv
+[0.239s] -- Up-to-date: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/ament_index/resource_index/packages/robot_cartographer
+[0.239s] -- Up-to-date: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/cmake/robot_cartographerConfig.cmake
+[0.239s] -- Up-to-date: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/cmake/robot_cartographerConfig-version.cmake
+[0.240s] -- Up-to-date: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/package.xml
+[0.240s] Invoked command in '/home/feihu/shaobing/feihu/src/robot_cartographer/build/robot_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/feihu/shaobing/feihu/src/robot_cartographer/build/robot_cartographer

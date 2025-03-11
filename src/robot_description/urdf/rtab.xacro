@@ -1,0 +1,309 @@
+<?xml version="1.0"?>
+<robot name="robot_description" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:property name="M_PI" value="3.14159274"/>
+
+  <xacro:include filename="$(find robot_description)/urdf/base.urdf.xacro"/>
+  <!-- <xacro:include filename="$(find robot_description)/urdf/globalpitch.urdf.xacro"/>
+  <xacro:include filename="$(find robot_description)/urdf/globalyaw.urdf.xacro"/> -->
+  <xacro:include filename="$(find robot_description)/urdf/mid360.xacro"/>
+  <xacro:include filename="$(find robot_description)/urdf/wheel_rr.urdf.xacro"/>
+  <xacro:include filename="$(find robot_description)/urdf/wheel_rf.urdf.xacro"/>
+  <xacro:include filename="$(find robot_description)/urdf/wheel_lf.urdf.xacro"/>
+  <xacro:include filename="$(find robot_description)/urdf/wheel_lr.urdf.xacro"/> 
+  
+  <xacro:include filename="$(find robot_description)/urdf/imu.urdf.xacro"/>
+  <xacro:include filename="$(find robot_description)/urdf/lidar.urdf.xacro"/>
+  <xacro:include filename="$(find robot_description)/urdf/camera.urdf.xacro"/>
+
+  <!-- =============== Link & Joint =============== -->
+  <!-- Base -->
+  <link name="livox_frame"/>
+
+  <xacro:base_v0 parent="livox_frame">
+  <origin xyz="0.00 0.00 0.54" rpy="3.14 -0.02543 0"/>
+  </xacro:base_v0>
+  <!-- <joint name="livox_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="livox_frame"/>
+    <origin xyz="0.01 0.00 0.40" rpy="0 0 0"/>
+  </joint> -->
+
+
+  <!-- <link name="odom_body">
+      <visual> 
+          <origin xyz="0.0 0.0 0" rpy="0 0 0"/>
+          <material name="blue">
+              <color rgba="0 0 1.0 1" />
+          </material>
+      </visual>
+  </link>
+
+  <joint name="livox_joint" type="fixed">
+      <origin xyz="0 0.0 0.0" rpy="3.14 0 0"/>
+      <parent link="odom_body"/>
+      <child link="odom"/>
+  </joint> -->
+
+
+  <!-- <link name="odom_body">
+      <visual> 
+          <origin xyz="0.0 0.0 0" rpy="0 0 0"/>
+          <material name="blue">
+              <color rgba="0 0 1.0 1" />
+          </material>
+      </visual>
+  </link>
+
+  <joint name="odom_joint" type="fixed">
+      <origin xyz="0 0.0 0" rpy="3.14 0 0"/>
+      <parent link="odom_body"/>
+      <child link="odom"/>
+  </joint> -->
+
+
+  <!-- <xacro:mid360 name="livox" parent="basbe_link" topic="mid360">
+  <origin xyz="0.19304 0.0002582 0.1855" rpy="0 0 0"/>
+  </xacro:mid360> -->
+
+  <!-- Lidar -->
+  <!-- <xacro:rplidar prefix="laser" parent = "base_link">
+  	<origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
+  </xacro:rplidar> -->
+  
+  <!-- IMU -->
+  <!-- <xacro:imu_v0 prefix="imu" parent="base_link">
+	<origin xyz="0.1975 0 0.023" rpy="0 0 0"  />
+  </xacro:imu_v0> -->
+
+  <!-- CAMERA -->
+ <xacro:camera_v0 prefix="camera" parent="base_link">
+  <origin xyz="0.08765 0.00 0.25416" rpy="0 0 0" />
+ </xacro:camera_v0>
+
+  <!-- Suspension -->
+  <!-- YAW -->
+  <!-- <xacro:steering_yaw prefix="yaw" parent="base_link">
+	<origin xyz="0 0 0.064" rpy="0 0 0" />
+	<axis xyz="0 0 -1" />
+  </xacro:steering_yaw> -->
+  <!-- PITCH -->
+
+  <!-- <xacro:steering_pitch prefix="pitch" parent="base_link">
+	<origin xyz="0 -0.00054389 0.16565"  rpy="0 0 0" />
+	<axis xyz="0 1 0" />
+  </xacro:steering_pitch> -->
+
+
+  <!-- Wheel -->
+  <!-- Front Right Wheel -->
+  <xacro:wheel_rr_v0 prefix="rr" parent="base_link">
+	<origin xyz="-0.17433 -0.1915 -0.0202" rpy="0 0 0" />
+	 <axis xyz="0 -1 0" />
+  </xacro:wheel_rr_v0>
+  <!--  Front Left Wheel -->
+  <xacro:wheel_lr_v0 prefix="rl" parent="base_link">
+	<origin xyz="-0.17433 0.1915 -0.0202" rpy="0 0 0" />
+	<axis xyz="0 1 0" />
+  </xacro:wheel_lr_v0>
+  <!-- Rear Right Wheel -->
+  <xacro:wheel_rf_v0 prefix="fr" parent="base_link">
+	<origin xyz="0.18033 -0.1915 -0.0202" rpy="0 0 0" />
+	<axis xyz="0 -1 0"/>
+  </xacro:wheel_rf_v0>
+  <!--  Rear Left Wheel -->
+  <xacro:wheel_lf_v0 prefix="fl" parent="base_link">
+	<origin xyz="0.18033 0.1915 -0.0202" rpy="0 0 0"/>
+	<axis xyz="0 1 0"/>
+  </xacro:wheel_lf_v0>
+
+  <!-- ===============  Wheel Transmission =============== -->
+  <xacro:wheel_trans_v0 prefix="fr"/>
+  <xacro:wheel_trans_v0 prefix="fl"/>
+  <xacro:wheel_trans_v0 prefix="rr"/>
+  <xacro:wheel_trans_v0 prefix="rl"/>
+  <!-- ===============  Steering Transmission =============== -->
+  <!-- <xacro:steering_trans_v0 prefix="yaw"/>
+  <xacro:steering_trans_v0 prefix="pitch"/> -->
+  <!-- =============== Gazebo =============== -->
+ 
+  <!-- Drive controller -->
+
+
+	<gazebo reference="base_link">
+	  <selfCollide>false</selfCollide>
+      <mu1 value="0.05" />
+      <mu2 value="0.05" />
+    </gazebo>
+
+<!-- <gazebo reference="camera_link">
+            <material>Gazebo/Black</material>
+        </gazebo>
+
+        <gazebo reference="camera_link">
+            <sensor type="camera" name="camera_node">
+                <update_rate>30.0</update_rate>
+                <camera name="head">
+                    <horizontal_fov>1.3962634</horizontal_fov>
+                    <image>
+                        <width>1280</width>
+                        <height>720</height>
+                        <format>R8G8B8</format>
+                    </image>
+                    <clip>
+                        <near>0.02</near>
+                        <far>300</far>
+                    </clip>
+                    <noise>
+                        <type>gaussian</type>
+                        <mean>0.0</mean>
+                        <stddev>0.007</stddev>
+                    </noise>
+                </camera>
+                <plugin name="gazebo_camera" filename="libgazebo_ros_camera.so">
+                    <alwaysOn>true</alwaysOn>
+                    <updateRate>0.0</updateRate>
+                    <cameraName>/camera</cameraName>
+                    <imageTopicName>image_raw</imageTopicName>
+                    <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+                    <frameName>camera_link</frameName>
+                    <hackBaseline>0.07</hackBaseline>
+                    <distortionK1>0.0</distortionK1>
+                    <distortionK2>0.0</distortionK2>
+                    <distortionK3>0.0</distortionK3>
+                    <distortionT1>0.0</distortionT1>
+                    <distortionT2>0.0</distortionT2>
+                </plugin>
+            </sensor>
+        </gazebo> -->
+
+<!-- <gazebo reference="imu_link">
+            <material>Gazebo/Black</material>
+	    <gravity>true</gravity>
+        </gazebo>
+ 	<gazebo reference="imu_link">
+	<sensor name="imu_sensor" type="imu">
+      	<always_on>true</always_on>
+      	<update_rate>100</update_rate>
+      	<visualize>true</visualize>
+      	<topic>__default_topic__</topic>
+      	<plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+	<topicName>imu</topicName>
+        <bodyName>imu_link</bodyName>
+        <updateRateHZ>100.0</updateRateHZ>
+        <gaussianNoise>0.0</gaussianNoise>
+        <xyzOffset>0 0 0</xyzOffset>
+        <rpyOffset>0 0 0</rpyOffset>
+        <frameName>imu_link</frameName>
+      </plugin>
+      <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo> -->
+
+
+  <!-- <gazebo reference="lidar_link">
+      <sensor name="laser_sensor" type="ray">
+      <always_on>true</always_on>
+      <visualize>true</visualize>
+      <update_rate>15</update_rate>
+      <pose>0 0 0.075 0 0 0</pose>
+      <ray>
+          <scan>
+            <horizontal>
+              <samples>360</samples>
+              <resolution>1.000000</resolution>
+              <min_angle>0.000000</min_angle>
+              <max_angle>6.280000</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.120000</min>
+            <max>3.5</max>
+            <resolution>0.015000</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+      </ray>
+
+      <plugin name="laserscan" filename="libgazebo_ros_ray_sensor.so">
+        <ros>
+          <remapping>~/out:=scan</remapping>
+        </ros>
+        <output_type>sensor_msgs/LaserScan</output_type>
+        <frame_name>lidar_link</frame_name>
+      </plugin>
+      </sensor>
+    </gazebo> -->
+
+
+	<!-- <gazebo reference="pitch_steering_link">
+	  <selfCollide>false</selfCollide>
+      <mu1 value="0.05" />
+      <mu2 value="0.05" />
+    </gazebo>
+
+    	<gazebo reference="yaw_steering_link">
+	  <selfCollide>false</selfCollide>
+      <mu1 value="0.05" />
+      <mu2 value="0.05" />
+    </gazebo> -->
+
+
+    <gazebo reference="fr_wheel_link">
+      <selfCollide>false</selfCollide>
+      <mu1 value="0" />
+      <mu2 value="0" />
+    </gazebo>
+    <gazebo reference="fl_wheel_link">
+      <selfCollide>false</selfCollide>
+      <mu1 value="0" />
+      <mu2 value="0" />
+    </gazebo>
+        <gazebo reference="rr_wheel_link">
+      <selfCollide>false</selfCollide>
+      <mu1 value="0" />
+      <mu2 value="0" />
+    </gazebo>
+        <gazebo reference="rl_wheel_link">
+      <selfCollide>false</selfCollide>
+      <mu1 value="0" />
+      <mu2 value="0" />
+    </gazebo>         
+
+<!-- <gazebo>
+
+<plugin name="mecanum_controller" filename="libgazebo_ros_planar_move.so">
+ <alwaysOn>true</alwaysOn>
+    <updateRate>100.0</updateRate>
+    <robotNamespace>/</robotNamespace>
+<commandTopic>base_vel</commandTopic>
+<odometryTopic>odom</odometryTopic>
+<odometryFrame>odom</odometryFrame>
+<leftFrontJoint>fl_wheel_joint</leftFrontJoint>
+<rightFrontJoint>fr_wheel_joint</rightFrontJoint>
+<leftRearJoint>rl_wheel_joint</leftRearJoint>
+<rightRearJoint>rr_wheel_joint</rightRearJoint>
+<wheelSeparation>0.383</wheelSeparation>
+<wheelDiameter>0.13</wheelDiameter>
+<odometryRate>20.0</odometryRate>
+<torque>2</torque>
+<robotBaseFrame>base_footprint</robotBaseFrame>
+<publishOdomTF>true</publishOdomTF>
+<broadcastTF>0</broadcastTF>
+</plugin>
+</gazebo> -->
+
+  <!-- <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+    <robotNamespace>/robot_description</robotNamespace>
+    <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+    <legacyModeNS>true</legacyModeNS>
+    </plugin>
+  </gazebo> -->
+
+
+
+</robot>

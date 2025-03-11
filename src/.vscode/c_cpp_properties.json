@@ -1,0 +1,58 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/feihu/shaobing/ros2_ws/install/rmoss_cam/include/**",
+        "/home/feihu/shaobing/ros2_ws/install/rmoss_util/include/**",
+        "/home/feihu/shaobing/ros2_ws/install/rmoss_projectile_motion/include/**",
+        "/home/feihu/shaobing/ros2_ws/install/rm_base/include/**",
+        "/home/feihu/shaobing/ros2_ws/install/rmoss_base/include/**",
+        "/home/feihu/shaobing/ros2_ws/install/rmoss_interfaces/include/**",
+        "/home/feihu/shaobing/ros2_ws/install/rm_interfaces/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/feihu/shaobing/fishbot/src/ldlidar_sl_ros2/include/**",
+        "/home/feihu/shaobing/fishbot/src/livox_laser_simulation_RO2/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_amcl/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_behavior_tree/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_behaviors/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_bt_navigator/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_collision_monitor/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_constrained_smoother/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_controller/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_core/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_costmap_2d/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_dwb_controller/costmap_queue/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_dwb_controller/dwb_core/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_dwb_controller/dwb_critics/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_dwb_controller/dwb_plugins/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_dwb_controller/nav_2d_utils/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_lifecycle_manager/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_map_server/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_mppi_controller/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_navfn_planner/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_planner/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_regulated_pure_pursuit_controller/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_rotation_shim_controller/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_rviz_plugins/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_smac_planner/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_smoother/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_theta_star_planner/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_util/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_velocity_smoother/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_voxel_grid/include/**",
+        "/home/feihu/shaobing/fishbot/src/navigation2/nav2_waypoint_follower/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

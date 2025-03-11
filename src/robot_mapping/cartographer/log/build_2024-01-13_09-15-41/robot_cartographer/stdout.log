@@ -1,0 +1,54 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/feihu/shaobing/feihu/src/robot_cartographer/build/robot_cartographer
+-- Install configuration: ""
+-- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/config
+-- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/config/cartographer.rviz
+-- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/config/fishbot_2d.lua
+-- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/config/fishbot_laser_2d.lua
+-- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/launch
+-- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/launch/cartographer.launch.py
+-- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/rviz
+-- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/rviz/fishbot_cartographer.rviz
+-- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/ament_index/resource_index/package_run_dependencies/robot_cartographer
+-- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/ament_index/resource_index/parent_prefix_path/robot_cartographer
+-- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/environment/ament_prefix_path.sh
+-- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/environment/ament_prefix_path.dsv
+-- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/environment/path.sh
+-- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/environment/path.dsv
+-- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/local_setup.bash
+-- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/local_setup.sh
+-- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/local_setup.zsh
+-- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/local_setup.dsv
+-- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/package.dsv
+-- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/ament_index/resource_index/packages/robot_cartographer
+-- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/cmake/robot_cartographerConfig.cmake
+-- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/cmake/robot_cartographerConfig-version.cmake
+-- Installing: /home/feihu/shaobing/feihu/src/robot_cartographer/install/robot_cartographer/share/robot_cartographer/package.xml

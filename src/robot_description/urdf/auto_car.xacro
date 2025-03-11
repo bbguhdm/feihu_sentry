@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<robot name="robot_description" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:property name="M_PI" value="3.14159274"/>
+
+  <xacro:include filename="$(find robot_description)/urdf/base.urdf.xacro"/>
+  <!-- <xacro:include filename="$(find robot_description)/urdf/globalpitch.urdf.xacro"/>
+  <xacro:include filename="$(find robot_description)/urdf/globalyaw.urdf.xacro"/> -->
+  <xacro:include filename="$(find robot_description)/urdf/mid360.xacro"/>
+  <xacro:include filename="$(find robot_description)/urdf/wheel_rr.urdf.xacro"/>
+  <xacro:include filename="$(find robot_description)/urdf/wheel_rf.urdf.xacro"/>
+  <xacro:include filename="$(find robot_description)/urdf/wheel_lf.urdf.xacro"/>
+  <xacro:include filename="$(find robot_description)/urdf/wheel_lr.urdf.xacro"/> 
+  
+  <xacro:include filename="$(find robot_description)/urdf/imu.urdf.xacro"/>
+  <xacro:include filename="$(find robot_description)/urdf/lidar.urdf.xacro"/>
+  <xacro:include filename="$(find robot_description)/urdf/camera.urdf.xacro"/>
+
+  <!-- =============== Link & Joint =============== -->
+  <!-- Base -->
+  <link name="livox_frame"/>
+
+  <xacro:base_v0 parent="livox_frame">
+  <origin xyz="0.04 0.00 -0.39" rpy="0 0 0"/>
+  </xacro:base_v0>
+  <!-- Wheel -->
+  <!-- Front Right Wheel -->
+  <xacro:wheel_rr_v0 prefix="rr" parent="base_link">
+	<origin xyz="-0.17433 -0.1915 -0.0202" rpy="0 0 0" />
+	 <axis xyz="0 -1 0" />
+  </xacro:wheel_rr_v0>
+  <!--  Front Left Wheel -->
+  <xacro:wheel_lr_v0 prefix="rl" parent="base_link">
+	<origin xyz="-0.17433 0.1915 -0.0202" rpy="0 0 0" />
+	<axis xyz="0 1 0" />
+  </xacro:wheel_lr_v0>
+  <!-- Rear Right Wheel -->
+  <xacro:wheel_rf_v0 prefix="fr" parent="base_link">
+	<origin xyz="0.18033 -0.1915 -0.0202" rpy="0 0 0" />
+	<axis xyz="0 -1 0"/>
+  </xacro:wheel_rf_v0>
+  <!--  Rear Left Wheel -->
+  <xacro:wheel_lf_v0 prefix="fl" parent="base_link">
+	<origin xyz="0.18033 0.1915 -0.0202" rpy="0 0 0"/>
+	<axis xyz="0 1 0"/>
+  </xacro:wheel_lf_v0>
+
+  <!-- ===============  Wheel Transmission =============== -->
+  <xacro:wheel_trans_v0 prefix="fr"/>
+  <xacro:wheel_trans_v0 prefix="fl"/>
+  <xacro:wheel_trans_v0 prefix="rr"/>
+  <xacro:wheel_trans_v0 prefix="rl"/>
+  <!-- ===============  Steering Transmission =============== -->
+  <!-- <xacro:steering_trans_v0 prefix="yaw"/>
+  <xacro:steering_trans_v0 prefix="pitch"/> -->
+  <!-- =============== Gazebo =============== -->
+ 
+  <!-- Drive controller -->
+
+
+	<gazebo reference="base_link">
+	  <selfCollide>false</selfCollide>
+      <mu1 value="0.05" />
+      <mu2 value="0.05" />
+    </gazebo>
+
+
+    <gazebo reference="fr_wheel_link">
+      <selfCollide>false</selfCollide>
+      <mu1 value="0" />
+      <mu2 value="0" />
+    </gazebo>
+    <gazebo reference="fl_wheel_link">
+      <selfCollide>false</selfCollide>
+      <mu1 value="0" />
+      <mu2 value="0" />
+    </gazebo>
+        <gazebo reference="rr_wheel_link">
+      <selfCollide>false</selfCollide>
+      <mu1 value="0" />
+      <mu2 value="0" />
+    </gazebo>
+        <gazebo reference="rl_wheel_link">
+      <selfCollide>false</selfCollide>
+      <mu1 value="0" />
+      <mu2 value="0" />
+    </gazebo>         
+</robot>
