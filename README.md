@@ -16,7 +16,7 @@ fast_lio:https://github.com/hku-mars/FAST_LIO.git
 
 livox_ros_driver2:https://github.com/Livox-SDK/livox_ros_driver2
 
-rtabmap:https://github.com/introlab/rtabmap_ros.git
+rtabmap:https://github.com/introlab/rtabmap.git
 
 rtabmap_ros:https://github.com/introlab/rtabmap_ros.git
 
